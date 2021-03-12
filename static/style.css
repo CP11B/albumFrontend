@@ -1,0 +1,31 @@
+.container {
+	padding-top: 6rem;
+}
+
+body {
+  background-color: #EEF0F2;
+}
+
+.ui.menu{
+	background-color: #136F63;
+	color: #EEF0F2
+}
+
+.ui.button {
+	background-color: #22AAA1;
+	color: #EEF0F2;
+}
+
+.ui.header, .ui.modal>.header, .ui.modal {
+	color: #35605A;
+	background-color: #EEF0F2;
+}
+
+.ui.form {
+	padding: 1.5rem;
+	padding-bottom: 4rem;
+}
+
+.ui.menu .item {
+	color: #EEF0F2;
+}
