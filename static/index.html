@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Record Player</title>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>	
+	<link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+	<div class="ui top fixed menu">
+		<div class="menu">
+			<div class="header item">
+				<i class="music icon"></i> RecordPlayer
+			</div>
+			<a class="item">
+				About
+			</a>
+		</div>
+		<div class="right menu">
+			<div class="item">
+				<button class="ui button" id="createButton">
+					<i class="fitted large plus icon"></i>
+				</button>
+	  		</div>
+  		</div>
+	</div>
+	<div class="ui container">
+		<h1 class="ui massive center aligned header">
+			Keep all your favourite albums in one place!
+		</h1>
+	<div class="ui four stackable cards" id="stack"></div>		
+		
+	<!--create form modal-->
+	<div class="ui modal modalForm">
+		<i class="close icon"></i>
+		<h1 class="ui center aligned header">
+			Add a new album
+		</h1>
+		<div>
+			<form class="ui form" id="postForm">
+				<div class="field">
+			    	<input type="text" name="title" placeholder="Title" value="" required>
+			  	</div>
+			  	<div class="field">
+			  		<input type="text" name="artist" placeholder="Artist" value="" required>
+			  	</div>
+			  	<div class="field">
+			  		<input type="text" name="releaseYear" placeholder="Release Year" value="">
+			  	</div>
+			    <div class="field">
+			  		<input type="text" name="imgSrc" placeholder="A link to the image address (Optional)" value="">
+			  	</div>
+			  	<div class="field">
+			  		<input type="text" name="playSrc" placeholder="A link to hear this album on Youtube/Spotify (Optional)" value="">
+			  	</div>
+			  	<div class="actions">
+	    			<button class="ui right floated button" type="submit" id="submit">
+	    				Add this album!
+	    			</button>
+  				</div>
+			</form>
+		</div>
+	</div>
+  	<!--create form modal end-->
+    <!--edit form modal-->
+	<div class="ui modal editForm">
+		<i class="close icon"></i>
+		<div>	
+			<form class="ui form" id="changeForm">
+				<div class="field">
+			    	<input type="text" name="title" placeholder="Title" value="" id="editTitle">
+			  	</div>
+			  	<div class="field">
+			  		<input type="text" name="artist" placeholder="Artist" value="" id="editArtist">
+			  	</div>
+			  	<div class="field">
+			  		<input type="text" name="releaseYear" placeholder="Release Year" value="" id="editReleaseYear">
+			  	</div>
+			    <div class="field">
+			  		<input type="text" name="imgSrc" placeholder="A link to the image address (Optional)" value="" id="editImgSrc">
+			  	</div>
+			  	<div class="field">
+			  		<input type="text" name="playSrc" placeholder="A link to hear this album on Youtube/Spotify (Optional)" value="" id="editPlaySrc">
+			  	</div>
+			  	<div class="actions">
+			  		<button class="ui right floated button" type="submit" id="deleteButton">
+	    				Delete
+	    			</button>
+	    			<button class="ui right floated button" type="submit" id="submitEditButton">
+	    				Save
+	    			</button>
+  				</div>
+			</form>
+		</div>
+	</div>
+  	<!--edit form modal end-->	 
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+	<script src="/main.js"></script>
+	</div>
+</body>
+</html>
+
