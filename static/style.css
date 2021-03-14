@@ -1,0 +1,39 @@
+.container {
+	padding-top: 6rem;
+}
+
+body {
+  background-color: #EEF0F2;
+}
+
+.ui.menu{
+	background-color: #2970A3;
+	color: #ACE0E8
+}
+
+.ui.button {
+	background-color: #649FE3;
+	color: #FFFFFF;
+}
+
+.ui.header {
+	padding: 2rem;
+}
+
+.ui.header, .ui.modal>.header, .ui.modal {
+	color: #2970A3;
+	background-color: #EEF0F2;
+}
+
+.ui.form {
+	padding: 1.5rem;
+	padding-bottom: 4rem;
+}
+
+.ui.menu .item {
+	color: #EEF0F2;
+}
+
+.ui.cards>.card>.content>.meta+.description {
+	margin-bottom: 1rem;
+}
