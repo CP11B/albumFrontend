@@ -35,7 +35,7 @@ It meets the above criteria be being able to do the following:
 Java (pretty much exlusively on the backend)
 HTML CSS and Javascript on the front end.
 
-## Technology/ Framework Stack
+# Technology/ Framework Stack
 
 
 # Backend
